@@ -3,12 +3,12 @@ A tensorflow implementation of the paper: A Fully Convolutional Neural Network f
 https://arxiv.org/abs/1609.07132
 A processed sample can be found in audiosample/
 
-## requirements
+## Requirements
   * tensorflow r0.11
   * librosa
   * numpy
 
-## file documentation
+## File documentation
   * SENN.py: The structure of the network.
   * audio_reader.py: Find the speech and noise in the files and enqueue the audios that have been read into tf.queue.
   * SENN_train.py: Train the net.
