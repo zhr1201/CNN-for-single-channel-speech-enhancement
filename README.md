@@ -20,5 +20,6 @@ A processed sample can be found in audiosample/
   * Mix your own samples and test use SENN_audio_eval.py
   
 ## Some other things
-  The original paper use element wise prewhitening and we also use that in this piece of code, but it turns out better to use global
+  The original paper use  per sample pre-whitening and we also use that in this piece of code, but it turns out better to use global
   mean and var to do the pre-whitening.
+  We didn't use the skip connections and our tests show that the most important factor leading to good performance is the size of the noise data set. The model is very likely to overfit if only 100 types of noise are provided.
